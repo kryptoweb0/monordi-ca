@@ -1,3 +1,29 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://monordi.ca/"           # Update to real domain later
+languageCode = "fr-ca"
+title = "Monordi"
+theme = "blowfish"
+
+defaultContentLanguage = "fr"
+
+[params]
+  description = "Site personnel de Nicolas – tech, projets, réflexions et plus"
+  defaultAppearance = "auto"              # Suit le mode système (dark/light)
+
+  # Homepage profile (add a photo later in static/images/avatar.jpg)
+  [params.home]
+    layout = "background"                  # This enables the full background style
+    # Optional: Add blur on scroll (gives a nice depth/ "animated" parallax feel)
+    layoutBackgroundBlur = true
+    
+    profile = { enabled = true, avatar = { src = "/images/avatar.png" } }
+    links = [
+      { github = "https://github.com/yourusername" },
+      { linkedin = "https://www.linkedin.com/in/nicolas-rodrigue" },
+      { email = "mailto:nicolas.rodrigue@gmail.com" }
+    ]
+
+  # Article features
+  [params.article]
+    math = true                           # If you need formulas
+    readingTime = true
+    license = { enabled = true, name = "CC BY-NC 4.0" }  # Optional
