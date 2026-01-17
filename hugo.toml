@@ -8,6 +8,7 @@ defaultContentLanguage = "fr"
 [params]
   description = "Site personnel de Nicolas – tech, projets, réflexions et plus"
   defaultAppearance = "auto"              # Suit le mode système (dark/light)
+  defaultBackgroundImage = "/images/background.jpg"   # Full path from static/
 
   # Homepage profile (add a photo later in static/images/avatar.jpg)
   [params.home]
@@ -15,9 +16,7 @@ defaultContentLanguage = "fr"
     # Optional: Add blur on scroll (gives a nice depth/ "animated" parallax feel)
     layoutBackgroundBlur = true
     # Add a background image (put your image in static/images/background.jpg)
-  [params]
-    defaultBackgroundImage = "/images/background.jpg"   # Full path from static/
-  
+    
     profile = { enabled = true, avatar = { src = "/images/avatar.jpg" } }
     links = [
       { github = "https://github.com/yourusername" },
