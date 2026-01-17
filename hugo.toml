@@ -15,7 +15,7 @@ defaultContentLanguage = "fr"
     layout = "background"                  # This enables the full background style
     # Optional: Add blur on scroll (gives a nice depth/ "animated" parallax feel)
     layoutBackgroundBlur = true
-    # Add a background image (put your image in static/images/background.jpg)
+    
     
     profile = { enabled = true, avatar = { src = "/images/avatar.jpg" } }
     links = [
