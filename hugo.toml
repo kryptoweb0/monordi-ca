@@ -1,6 +1,6 @@
 baseURL = "https://monordi.ca/"           # Update to real domain later
 languageCode = "fr-ca"
-title = "Monordi"
+title = "MonOrdi.ca"
 theme = "blowfish"
 
 defaultContentLanguage = "fr"
@@ -14,8 +14,11 @@ defaultContentLanguage = "fr"
     layout = "background"                  # This enables the full background style
     # Optional: Add blur on scroll (gives a nice depth/ "animated" parallax feel)
     layoutBackgroundBlur = true
-    
-    profile = { enabled = true, avatar = { src = "/images/avatar.png" } }
+    # Add a background image (put your image in static/images/background.jpg)
+  [params]
+    defaultBackgroundImage = "/images/background.jpg"   # Full path from static/
+  
+    profile = { enabled = true, avatar = { src = "/images/avatar.jpg" } }
     links = [
       { github = "https://github.com/yourusername" },
       { linkedin = "https://www.linkedin.com/in/nicolas-rodrigue" },
