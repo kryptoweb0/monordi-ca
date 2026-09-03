@@ -246,7 +246,7 @@ a:hover {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Quick Card in Hero */
+/* Hero Card & Founder Avatar */
 .hero-card {
   background: var(--color-bg-card);
   backdrop-filter: var(--backdrop-blur);
@@ -254,20 +254,43 @@ a:hover {
   border-radius: var(--radius-lg);
   padding: 2.2rem;
   box-shadow: var(--shadow-card);
+  text-align: center;
 }
 
-.hero-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+.hero-avatar-box {
+  margin-bottom: 1.2rem;
+}
+
+.hero-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-cyan);
+  box-shadow: 0 0 25px var(--color-primary-glow);
+  margin-bottom: 0.8rem;
+}
+
+.founder-name {
+  font-size: 1.35rem;
+  font-weight: 700;
   color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
+}
+
+.founder-title {
+  color: var(--color-cyan);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 .hero-card ul {
   list-style: none;
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .hero-card li {
