@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Hybride &amp; Infrastructure | MonOrdi.ca</title>
+  <meta name="description" content="Solutions Cloud hybrides, accès distant Zéro Trust avec Tailscale, conteneurs Docker, serveurs NAS locaux et automatisation Home Assistant par Nicolas Rodrigue.">
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-laptop-code"></i> MonOrdi<span>.ca</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="soutien.html">Soutien TI</a></li>
+        <li><a href="sauvegardes.html">Sauvegardes</a></li>
+        <li><a href="achats.html">Achats TI</a></li>
+        <li><a href="workedin.html">WorkedIn</a></li>
+        <li><a href="index.html#contact" class="btn-cta"><i class="fa-solid fa-phone"></i> Me contacter</a></li>
+      </ul>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main style="padding-top: 7.5rem; min-height: 80vh;">
+    <div class="section" style="padding-top: 1rem;">
+      <!-- Breadcrumb -->
+      <div class="badge" style="margin-bottom: 1.5rem;">
+        <a href="index.html" style="color: var(--color-text-muted); text-decoration: none;">Accueil</a> &nbsp;/&nbsp; 
+        <span style="color: var(--color-cyan);">Cloud &amp; Infrastructure Hybride</span>
+      </div>
+
+      <div class="section-header" style="text-align: left; max-width: 100%; margin-bottom: 2.5rem;">
+        <span class="section-tag">Optimisation &amp; Sécurité Technologique</span>
+        <h1 class="section-title" style="font-size: 3rem;">Cloud &amp; Infrastructure Hybride Sur Mesure</h1>
+        <p class="section-subtitle">
+          Le Cloud n'a pas à être synonyme d'abonnements mensuels hors de prix ni d'abandon de votre vie privée. Je vous aide à tirer le meilleur parti des technologies modernes en combinant la puissance du Cloud et la sécurité de vos propres équipements.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 2.5rem; text-align: center;">
+        <img src="images/cloud_sec.jpg" alt="Cloud Infrastructure" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-card);">
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+        
+        <!-- Box 1 -->
+        <div class="card" style="padding: 2.2rem;">
+          <div class="card-icon"><i class="fa-solid fa-shield-cat"></i></div>
+          <h3 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.8rem;">🔒 Accès Distant Sécurisé (Zéro Trust)</h3>
+          <p style="color: var(--color-text-muted); font-size: 1rem; line-height: 1.6;">
+            Oubliez les VPN traditionnels lents et complexes à configurer. Grâce à des solutions modernes comme <strong>Tailscale</strong> ou <strong>Twingate</strong>, connectez vos ordinateurs, serveurs et appareils mobiles dans un réseau privé virtuel chiffré de bout en bout, accessible de n'importe où sans exposer vos ports sur Internet.
+          </p>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="card" style="padding: 2.2rem;">
+          <div class="card-icon"><i class="fa-brands fa-docker"></i></div>
+          <h3 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.8rem;">🐳 Virtualisation et Conteneurs (Docker)</h3>
+          <p style="color: var(--color-text-muted); font-size: 1rem; line-height: 1.6;">
+            Grâce à <strong>Docker</strong>, un simple PC reconditionné peut faire rouler des dizaines d'applications isolées, sécurisées et ultra-légères. C'est la solution idéale pour héberger vos propres outils de gestion internes sans ralentir votre système principal.
+          </p>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="card" style="padding: 2.2rem;">
+          <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+          <h3 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.8rem;">📂 Stockage et Sauvegardes Réseau (NAS)</h3>
+          <p style="color: var(--color-text-muted); font-size: 1rem; line-height: 1.6;">
+            Transformez une ancienne machine ou un boîtier NAS dédié en serveur de stockage réseau privé. C'est une alternative très économique pour centraliser vos documents importants, automatiser vos sauvegardes et garder le contrôle total sur vos données sensibles.
+          </p>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="card" style="padding: 2.2rem;">
+          <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.8rem;">🤖 Automatisation &amp; Domotique Pro</h3>
+          <p style="color: var(--color-text-muted); font-size: 1rem; line-height: 1.6;">
+            Utilisez un Raspberry Pi ou un mini-PC pour centraliser la gestion de votre environnement de travail (éclairage, chauffage, caméras, serrures intelligentes) via des plateformes d'automatisation ouvertes comme <strong>Home Assistant</strong> ou <strong>n8n</strong>.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Philosophy Card -->
+      <div class="card" style="padding: 2.5rem; background: rgba(15, 23, 42, 0.9); border: 1px solid var(--color-cyan); margin-bottom: 3rem;">
+        <h3 style="color: var(--color-cyan); font-size: 1.5rem; margin-bottom: 1rem;"><i class="fa-solid fa-compass"></i> Mon Approche Cloud Hybride</h3>
+        <p style="font-size: 1.1rem; line-height: 1.7; color: #e2e8f0;">
+          Je privilégie des <strong>solutions éprouvées, ouvertes et sécurisées</strong> qui maximisent la durée de vie de votre matériel actuel tout en tirant parti de la robustesse des services Cloud pour les tâches les plus critiques. Vous évitez ainsi les abonnements récurrents inutiles tout en conservant une infrastructure digne des grandes entreprises.
+        </p>
+      </div>
+
+      <!-- Bottom Callout CTA -->
+      <div style="text-align: center; background: var(--color-bg-card); padding: 3rem 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+        <h3 style="font-size: 1.8rem; margin-bottom: 0.8rem;">Envie d'optimiser votre infrastructure Cloud ?</h3>
+        <p style="color: var(--color-text-muted); font-size: 1.1rem; margin-bottom: 2rem;">Discutons ensemble de vos besoins pour créer une architecture hybride sur mesure.</p>
+        <a href="index.html#contact" class="btn-cta" style="font-size: 1.1rem; padding: 0.9rem 2.5rem;"><i class="fa-solid fa-cloud-arrow-up"></i> Planifier une consultation Cloud</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="soutien.html">Soutien TI</a>
+      <a href="sauvegardes.html">Sauvegardes</a>
+      <a href="achats.html">Achats TI</a>
+      <a href="https://youtube.com/@nicolasrodrigue529" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> YouTube</a>
+      <a href="#" id="open-privacy">Politique de confidentialité (Loi 25)</a>
+    </div>
+    <p>&copy; 2026 MonOrdi.ca - Nicolas Rodrigue. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Privacy Policy Modal (Loi 25) -->
+  <div class="modal" id="privacy-modal" style="display: none;">
+    <div class="modal-content" style="max-height: 85vh; overflow-y: auto;">
+      <span class="close-modal" id="close-privacy">&times;</span>
+      <h2 style="margin-bottom: 0.5rem; color: var(--color-cyan);">Politique de confidentialité</h2>
+      <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.75rem;">
+        <strong>Dernière mise à jour : 2 septembre 2026</strong>
+      </p>
+
+      <p style="margin-bottom: 1.5rem; line-height: 1.6;">
+        La protection de votre vie privée est une priorité pour <strong>MonOrdi.ca</strong>. Cette politique décrit comment vos renseignements personnels sont recueillis, utilisés et protégés conformément à la <strong>Loi 25</strong> du Québec.
+      </p>
+
+      <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: #fff;">1. Collecte des renseignements personnels</h3>
+      <p style="margin-bottom: 1rem; line-height: 1.6;">
+        Mon site web (<code>monordi.ca</code>) est un site statique informatif. <strong>Il ne collecte aucune donnée personnelle automatique</strong>, ne possède pas de formulaire de contact et n'utilise aucun témoin (cookie) publicitaire ou de pistage (comme Google Analytics).
+      </p>
+
+      <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: #fff;">2. Utilisation et conservation des données</h3>
+      <p style="margin-bottom: 0.5rem;">Vos renseignements sont utilisés exclusivement pour :</p>
+      <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: #cbd5e1;">
+        <li style="margin-bottom: 0.3rem;">Vous fournir les services de soutien technique demandés.</li>
+        <li style="margin-bottom: 0.3rem;">Procéder à la facturation de nos services via notre logiciel de gestion <strong>Wave</strong>.</li>
+        <li style="margin-bottom: 0.3rem;">Communiquer avec vous pour le suivi de vos dossiers.</li>
+      </ul>
+
+      <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: #fff;">3. Partage avec des tiers</h3>
+      <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: #cbd5e1;">
+        <li style="margin-bottom: 0.4rem;"><strong>Wave</strong> : Pour la facturation et la comptabilité.</li>
+        <li style="margin-bottom: 0.4rem;"><strong>Google Workspace</strong> : Pour nos communications électroniques et outils de messagerie sécurisés.</li>
+        <li style="margin-bottom: 0.4rem;"><strong>Workedin.ca</strong> : Si vous êtes un client provenant de cette plateforme, les données partagées le sont selon leurs propres politiques de confidentialité.</li>
+      </ul>
+
+      <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: #fff;">5. Responsable de la protection des données</h3>
+      <div style="background: rgba(255, 255, 255, 0.05); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); margin-bottom: 1.5rem;">
+        <p style="font-weight: 700; color: #fff; font-size: 1.05rem; margin-bottom: 0.3rem;">Nicolas Rodrigue</p>
+        <p style="color: var(--color-cyan); font-size: 0.95rem; margin-bottom: 0.6rem;">Responsable de la protection des renseignements personnels</p>
+        <p style="margin-bottom: 0.2rem;"><strong>Courriel :</strong> contact [at] monordi.ca</p>
+        <p><strong>Téléphone :</strong> 873-477-0486</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=3"></script>
+</body>
+</html>
