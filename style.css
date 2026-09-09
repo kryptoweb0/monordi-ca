@@ -341,11 +341,12 @@ a:hover {
   font-weight: 500;
 }
 
-/* Section Styling */
-.section {
+/* Section & Anchor Offset Styling */
+.section, .card[id] {
   padding: 6rem 2rem;
   max-width: 1280px;
   margin: 0 auto;
+  scroll-margin-top: 90px;
 }
 
 .section-header {
