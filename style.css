@@ -104,6 +104,44 @@ a:hover {
   color: var(--color-cyan);
 }
 
+.nav-logo-img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--color-border);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  gap: 0.4rem;
+}
+
+.lang-toggle a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.lang-toggle a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.lang-toggle .active {
+  color: #fff;
+  background: var(--color-primary);
+  border-radius: 4px;
+  padding: 0.15rem 0.4rem;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
